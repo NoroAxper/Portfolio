@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 22px;
+  color: #fff;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+h1 {
+  padding: 77px 48px;
+  border: white 2px solid;
+  background-image: url("./assets/filmReel.gif");
+  background-size: contain;
+}
+h3 {
+  text-decoration: underline;
+}
+.projector {
+  position: relative;
+  background-image: url("./assets/projector.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 245px;
+  right: 240px;
+}
+.title, .aboutme {
+  display: grid;
+}
+.title {
+  place-items: center;
+  isolation: isolate;
+  margin-bottom: 20px;
+  padding-top: 84px;
+}
+.title > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+.aboutme {
+  justify-items: center;
+  padding: 0px 3%;
+  margin-bottom: 40px;
+}
+.paragraph {
+  line-height: 30px;
+  border-left: white;
+  border-bottom: white;
+  padding: 0 33px;
+  box-shadow: -9px 10px 20px 0px white;
+}
+.portfolioShow {
+  text-align: center;
+  background-color: rgb(41,41,41);
+  padding: 0px 20px 30px;
+}
+.portfolioStage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 40px;
+}
+.card {
+  height: 250px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 16px white;
+  transform: scale(1.05);
+  filter: brightness(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 16px 16px white;
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+.shopFrontCard {
+  background-image: url("./assets/shopFrontSS.png");
+}
+.shopFrontCard:hover {
+  background-image: url("./assets/shopFrontGif.gif");
+}
+.spotifyReplicaCard {
+  background-image: url("./assets/spotifyReplicaSS.png");
+}
+.spotifyReplicaCard:hover {
+  background-image: url("./assets/spotifyReplicaGif.gif");
+}
+.solarSystemCard {
+  background-image: url("./assets/solarSystemSS.png");
+}
+.solarSystemCard:hover {
+  background-image: url("./assets/solarSystemGif.gif");
+}
+.shopFront, .spotifyReplica, .solarSystem {
+  height: 100%;
+  width: 60%;
+  display: grid;
+  row-gap: 29px;
+}
+.footer {
+  background-color: #000;
+  height: 50px;
+  color: #373737;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.lastcard {
+  width: 50%;
+  justify-self: center;
+}
+.lastcard:last-child {
+  grid-column: span 2;
+  justify-self: center;
+}
+.icons {
+  position: fixed;
+  top: 0px;
+  left: 41px;
+  background: white;
+  height: 58px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+svg {
+  height: 56px;
+}
+/* ========================= */
+
+#curtain {
+  height: 100vh;
+  width: 10vw;
+}
+#starter {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 50px;
+	margin-top: -25px;
+	margin-left: -150px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#scene {
+	position: fixed;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+#curtain {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+#curtain .left,
+#curtain .right {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	filter: brightness(180%);
+	background-image: url("https://static.vecteezy.com/system/resources/previews/000/678/860/original/red-silk-curtain-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#curtain .left {
+	left: 0;
+	transform-origin: top right;
+}
+#curtain .right {
+	left: 50%;
+	transform-origin: top left;
+}
+
+
+/* **********
+	opening
+********** */
+
+#scene.expand {
+	background-color: rgba(32, 32, 32, 0);
+	animation-fill-mode: forwards;
+	animation-duration: 2.5s, 1.5s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-delay: 0s, 2.5s;
+	animation-iteration-count: 1, 1;
+	animation-direction: normal, normal;
+}
+
+#curtain.open .left,
+#curtain.open .right {
+	filter: brightness(100%);
+}
+#curtain.open .left {
+	animation-fill-mode: forwards;
+	animation-name: curtain-opening, left-curtain-opening;
+	animation-duration: 2s, 4s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-delay: 0s, 0s;
+	animation-iteration-count: 1, 1;
+	animation-direction: normal, normal;
+}
+#curtain.open .right {
+	animation-fill-mode: forwards;
+	animation-name: curtain-opening, right-curtain-opening;
+	animation-duration: 2s, 4s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-delay: 0s, 0s;
+	animation-iteration-count: 1, 1;
+	animation-direction: normal, normal;
+}
+
+/* **********
+	animations
+********** */
+
+@keyframes curtain-opening { /* 2s */
+	from { filter: brightness(180%); }
+	to { filter: brightness(100%); }
+}
+
+@keyframes left-curtain-opening { /* 4s */ 
+	from { transform: translate(0) rotate(0) scale(1,1); }
+	to { transform: translate(-100%) rotate(20deg) scale(0,2); }
+}
+
+@keyframes right-curtain-opening { /* 4s */
+	from { transform: translate(0) rotate(0) scale(1,1); }
+	to { transform: translate(100%) rotate(-20deg) scale(0,2); }
+}
+.hidden {
+  display: none;
+}
+
+/* ======================== */
+
+@media (max-width: 768px) {
+  .portfolioStage {
+    grid-template-columns: auto;
+  }
+  h1 {
+    padding: 38px 25px;
+  }
+  .projector {
+    height: 137px;
+    width: 187px;
+    right: 207px;
+  }
+}
+@media (max-width: 590px) {
+  h1 {
+    padding: 25px 9px;
+  }
+  .projector {
+    height: 76px;
+    width: 136px;
+    right: 130px;
+  }
+}
+@media (max-width: 425px) {
+}
