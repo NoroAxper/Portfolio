@@ -33,7 +33,7 @@ const Portfolio = () => {
                     </div>
                     <div className="solarSystem">
                         <h3>Solar System</h3>
-                        <a href="https://noriks-spotify-replica.vercel.app" target="_blank" rel="noreferrer">
+                        <a href="https://noriks-solarsystem.vercel.app" target="_blank" rel="noreferrer">
                             <button className="solarSystemCard card"></button>
                         </a>
                         <p>A replica of Spotify I built using <b>HTML</b>, <b>CSS</b> and <b>Javascript</b> where my main focus was on <b>Javascript</b> to achieve the background colour change and blending header.</p>
