@@ -22,7 +22,7 @@ const Portfolio = () => {
                         <a href="https://uomo-shopfront.vercel.app" target="_blank" rel="noreferrer">
                             <button className="shopFrontCard card"></button>
                         </a>
-                        <p>A full stack website built using <b>React.js</b>, <b>CSS</b> and with <b>Node.js</b>, <b>Express.js</b> and <b>MongoDB</b>. This is a project built and developed in around 6 weeks by 5 software developers and myself. </p>
+                        <p>A full stack website built using <b>React.js</b>, <b>CSS</b> and with <b>Node.js</b>, <b>Express.js</b> and <b>MongoDB</b>. This is a project built and developed in around 6 weeks by 5 software developers and myself. Also mobile responsive. </p>
                     </div>
                     <div className="spotifyReplica">
                         <h3>Spotify Replica</h3>
@@ -36,7 +36,11 @@ const Portfolio = () => {
                         <a href="https://noriks-solarsystem.vercel.app" target="_blank" rel="noreferrer">
                             <button className="solarSystemCard card"></button>
                         </a>
-                        <p>A replica of Spotify I built using <b>HTML</b>, <b>CSS</b> and <b>Javascript</b> where my main focus was on <b>Javascript</b> to achieve the background colour change and blending header.</p>
+                        <p>Using <b>React</b> and <b>CSS</b> I aimed to create a solar system registration form focusing on using animations.</p>
+                    </div>
+                    <div className="poker">
+                        <h3>Five card poker</h3>
+                        <p>To be added...</p>
                     </div>
                 </div>
             </div>
