@@ -36,7 +36,7 @@ const Portfolio = () => {
                         <a href="https://noriks-solarsystem.vercel.app" target="_blank" rel="noreferrer">
                             <button className="solarSystemCard card"></button>
                         </a>
-                        <p>Using <b>React</b> and <b>CSS</b> I aimed to create a solar system registration form focusing on using animations.</p>
+                        <p>Using <b>React</b> and <b>CSS</b> I aimed to create a solar system registration form focusing on using animations. Also mobile responsive</p>
                     </div>
                     <div className="poker">
                         <h3>Five card poker</h3>
