@@ -95,10 +95,10 @@ h3 {
   background-image: url("./assets/spotifyReplicaGif.gif");
 }
 .solarSystemCard {
-  background-image: url("./assets/solarSystemSS.png");
+  background-image: url("./assets/solarySystemSS.png");
 }
 .solarSystemCard:hover {
-  background-image: url("./assets/solarSystemGif.gif");
+  background-image: url("./assets/solarySystemGif2.gif");
 }
 .shopFront, .spotifyReplica, .solarSystem {
   height: 100%;
@@ -275,7 +275,7 @@ svg {
     background-image: url("./assets/spotifyReplicaGif.gif");
   }
   .solarSystemCard {
-    background-image: url("./assets/solarSystemGif.gif");
+    background-image: url("./assets/solarySystemGif2.gif");
   }
 }
 @media (max-width: 590px) {
