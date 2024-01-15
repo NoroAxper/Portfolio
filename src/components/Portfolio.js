@@ -16,6 +16,10 @@ const Portfolio = () => {
                         <p></p>
                     </div>
                 </div>
+                <div className="techStack">
+                    <h3>Tech Stack</h3>
+                    <p>React · JavaScript · HTML · CSS · Node.JS · Express · Postgres · SQL · Prisma · TDD · RESTful API's · Authentication · MongoDB</p>
+                </div>
                 <div className="portfolioStage" >
                     <div className="shopFront">
                         <h3>Uomo</h3>

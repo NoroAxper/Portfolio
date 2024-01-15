@@ -278,6 +278,10 @@ svg {
     background-image: url("./assets/solarySystemGif2.gif");
   }
 }
+.techStack {
+  background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(0,0,0,1) 50%, rgba(41,41,41,1) 100%);
+  padding: 22px 0px;
+}
 @media (max-width: 590px) {
   h1 {
     padding: 25px 9px;
