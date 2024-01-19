@@ -131,6 +131,9 @@ h3 {
   border-bottom-right-radius: 11px;
   border-bottom-left-radius: 11px;
 }
+.cv {
+  left: 104px;
+}
 svg {
   height: 56px;
 }

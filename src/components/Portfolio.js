@@ -1,5 +1,6 @@
 import Linkedin from "../assets/Linkedin";
 import Curtains from "./Curtains";
+import Cv from "../assets/Cv"
 
 const Portfolio = () => {
     return (
@@ -54,6 +55,11 @@ const Portfolio = () => {
             <div className="icons">
                 <a href="https://www.linkedin.com/in/norik-vardanyan/" target="_blank" rel="noreferrer">
                     <Linkedin/>
+                </a>
+            </div>
+            <div className="icons cv">
+                <a href="https://app.enhancv.com/share/c9f9792b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank" rel="noreferrer">
+                    <Cv/>
                 </a>
             </div>
         </>
